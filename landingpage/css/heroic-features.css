@@ -1,0 +1,191 @@
+/*!
+ * Start Bootstrap - Heroic Features HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    background-color: #c2cfd8;
+    height: 100%;
+    width: 100;
+}
+
+h1{
+	font-size:  53px;
+}
+
+.hero-spacer {
+    margin-top: 50px;
+}
+
+.hero-feature {
+	margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.thumbnail{
+	padding-top: 8%;
+	padding-left: 2%;
+	padding-right: 2%;
+	background-color: #e1eeff;
+	box-shadow: 10px 10px 5px #888888;
+	min-height: 395px;
+	overflow-y: auto;
+}
+
+footer {
+    margin: 15px 0;
+}
+
+.header-14-sub {
+  padding-top: 7%;
+  color: #000000;
+  background-color: #c2cfd8;
+  position: relative;
+  min-height: 100vh; /* set default height */
+}
+
+
+.short_desc{
+	text-align: left;
+	padding-left: 4%;
+}
+
+.thumbnailbottom{
+	transition: 1s;
+	overflow-y: hidden;
+}
+
+.thumbnailbottom:hover{
+  box-shadow: 15px 15px 5px #000000;
+  transition: 1s;
+}
+
+.text-uppercase{
+	color: #10a5cd;
+	font-size: 17px;
+}
+
+.facts_box{
+	padding-top: 12%;
+	padding-left: 5%;
+	font-size: 20px;
+}
+#footer {
+  text-align: right;
+
+}
+
+
+.left_border_blue{
+	border-left: 4px solid #10a5cd;
+	padding-left: 3%;
+	text-align: left;
+}
+
+.pull-down{
+	padding-top: 50%;
+	padding-bottom: 0px;
+}
+
+.trans{
+	transition: 1s;
+	padding-top: 5%;
+	font-family: helvetica;
+}
+
+.domain{
+	background-color: rgba(0,0,0,0	);
+}
+.inside-domain {
+    display:none
+}
+
+
+.trans:hover{
+	background: #c0dcf6;
+}
+
+.trans:hover .inside-domain {
+    display:block;
+}
+
+
+.trans:hover{
+	padding-top: 0%;
+	display: block;
+	transition: 1s;
+}
+
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 25px;
+    padding: 7px 16px ;
+    border: 2px solid #000;
+    border-radius: 100%!important;
+    font-size: 40px;
+    color: #000;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    transition: 1s;
+}
+
+.btn-circle:hover{
+    outline: 0;
+    color: #10a5cd;
+    background: rgba(255,255,255,.1);
+    border: 2px solid #10a5cd;
+}
+
+.btn-circle i.animated {
+	-webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {    
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}

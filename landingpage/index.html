@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Heroic Features - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+  <!--   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>   
+    <script type="text/javascript" src="./js/count.js"></script>
+    <!-- Custom CSS -->
+    <link href="css/heroic-features.css" rel="stylesheet">
+    <script type="text/javascript">
+    $(window).bind('mousewheel DOMMouseScroll', function(event){
+        if($(window).width() >= 960){
+    if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
+        // scroll up
+        $(".top").click();
+        smoothScroll(document.getElementById('top'))
+        
+    }
+    else {
+        // scroll down
+        $(".top").click();
+        $('.top').trigger('click');
+        smoothScroll(document.getElementById('bottom'))
+    }
+}
+});
+
+    window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+     scroll = function(c, a, b, i) {
+        i++; if (i > 20) return;
+        c.scrollTop = a + (b - a) / 20 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 10);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+    </script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+
+<body>
+<a href="#bottom" id="top" onclick="smoothScroll(document.getElementById('bottom'))"></a>
+    <!-- Page Content -->
+    <div class="container">
+
+        <section>
+            <div class = "header-14-sub">
+                <div class="row text-center">
+                    <div class="col-md-8 col-sm-8 hero-feature">
+                        <div class="thumbnail">
+                            <!-- <img src="http://placehold.it/800x500" alt=""> -->
+                            <!-- <div class="caption"> -->
+                             <div class="left_border_blue">
+                             <h1>AURORA</h1>
+                                <p class="text-uppercase">Proin gravida nibhISI</p>                 
+                            </div>               
+                                <div>
+                                    <p class="short_desc"><span>
+                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim egestas felis ut efficitur.Ut vestibulum est sapien, eu egestas augue viverra eget. Curabitur tempor, ligula at facilisis laoreet, tortor sapien feugiat sapien, id malesuada odio nisi eget nunc. 
+                                    </span></p>
+                                    <span>   <!--- FOR typed.js -->
+                                    <br>
+                                    </span>
+                                </div>         
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 hero-feature">
+                    <div class="thumbnail">
+                        <div class = "left_border_blue"> 
+                            <h2><span id="resource">0</span></h2>  
+                            <p class = "facts_font">Resources Referred</p>
+                        </div>                      
+                        <div class = "left_border_blue"> 
+                            <h2><span id="tech">0</span></h2> 
+                            <p class = "facts_font">Technologies Traversed</p>
+                        </div>
+                        <div class = "left_border_blue"> 
+                            <h2><span id="domain">0</span></h2> 
+                            <p class = "facts_font">Domains Delved</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <center>
+                        <a href="#secondPage" class="btn btn-circle page-scroll" onclick="smoothScroll(document.getElementById('bottom'))">
+                            <i class="fa fa-angle-double-down animated pulse"></i>
+                        </a>
+                </center>
+            </div>
+        </section>
+
+        <hr>
+
+        <section> 
+            <div class = "section">
+            <div class = "container">
+                <section id = "sec2"> 
+                    <div class = "header-14-sub">
+                        <!-- Page Features -->
+                        <div class="row text-center">
+
+                            <div class="col-md-4 col-sm-6 hero-feature">
+                                <div class="trans thumbnail thumbnailbottom">
+
+                                    <div class="caption">
+
+                                        <h3>Domains</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <p class = "inside-domain pull-down">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim egestas felis ut efficitur. Ut vestibulum est sapien, eu egestas augue viverra eget.<br>
+                                            <a href="#" class="btn btn-success">Discover Domains</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6 hero-feature">
+                                <div class="trans thumbnail thumbnailbottom">
+
+                                    <div class="caption">
+                                        <h3>Mind Map</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <p class = "inside-domain pull-down">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim egestas felis ut efficitur. Ut vestibulum est sapien, eu egestas augue viverra eget.</br>
+                                            <a href="#" class="btn btn-success" href="#openModal">Explore Everything</a>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6 hero-feature">
+                                <div class="trans thumbnail thumbnailbottom">
+                                    <div class="caption">
+                                        <h3>Technology</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <p class = "inside-domain pull-down">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim egestas felis ut efficitur. Ut vestibulum est sapien, eu egestas augue viverra eget.</br>
+                                             <a href="#" class="btn btn-success">Traverse Technologies</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- /.row -->
+            <div id = "footer">
+                <div class="col-md-12 col-sm-12">
+                    <hr>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#aboutModal">About Us</button>
+                </div>
+            </div>
+
+            <div id="contactModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Contact Us</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form role="form" id = "feedback">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="email" id="loginemail">
+                                </div>
+                            </form>
+                            <textarea rows="6" cols="78" name="comment" form="usrform"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="modal-footer">
+                                <input type="submit" class="btn btn-primary btn-block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="aboutModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">About Us</h4>
+                      </div>
+                      <div class="modal-body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim egestas felis ut efficitur. Ut vestibulum est sapien, eu egestas augue viverra eget. Curabitur tempor, ligula at facilisis laoreet, tortor sapien feugiat sapien, id malesuada odio nisi eget nunc.
+                      </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+        <a href="#top" id="bottom" onclick="smoothScroll(document.getElementById('top'))"></a>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <!--<script src="js/jquery.js"></script>--> 
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
