@@ -1,0 +1,20 @@
+body{
+   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color:#c2cfd8!important;
+    font-weight:300;
+    padding-top: 10%;
+}
+.errorimg{
+    height: 100px;
+    width: 100px;
+}
+
+
+
+.well{
+    width: 60%;
+    overflow: auto;
+    min-width: 250px;
+}
+
+    
